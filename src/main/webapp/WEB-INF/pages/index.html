@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html ng-app="loginApp">
+<head>
+<title>Login</title>
+<!-- Custom Theme files -->
+<link href="assets/css/login.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" href="assets/css/angular-busy.css">
+<!-- for-mobile-apps -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<!-- //for-mobile-apps -->
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body ng-controller="loginAppController" cg-busy="{promise:promise,templateUrl:templateUrl,message:message,backdrop:backdrop,delay:delay,minDuration:minDuration}">
+<!--header start here-->
+<div class="header">
+  <div class="header-main">
+    <h1>Stack Login</h1>
+    <div class="header-bottom">
+      <div class="header-right w3agile">
+        <div class="header-left-bottom agileinfo">
+          <form action="#" method="post" >
+            <input type="text" data-ng-model="emailAddress" placeholder="Email"/>
+            <input type="password" data-ng-model="password" placeholder="Password" data-ng-enter="loginForm()"/>
+            <input type="button" data-ng-click="loginForm()" value="Login"/>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--header end here-->
+<!--footer end here-->
+ 	<script type="text/javascript" src="assets/js/angular.min.js"></script>
+ 	<script type="text/javascript" src="assets/js/angular-busy.js"></script>
+    <script type="text/javascript" src="assets/js/login.js"></script>
+</body>
+</html>
